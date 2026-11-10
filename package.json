@@ -1,0 +1,14 @@
+{
+  "name": "woodstack-pos",
+  "version": "1.6.0",
+  "description": "Self-hosted point of sale for WOODstack: multi-store selling, inventory, RFID counts, Shopify orders, store credit, time clock, scheduling and reporting.",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "server.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test --test-concurrency=4 \"test/*.test.js\"",
+    "check": "node --check server.js && node --check shopify.js && node --check alerts.js && node --check reports.js && node --check public/ws-client.js"
+  }
+}

@@ -1,0 +1,8 @@
+# Live data never goes in git: the database, its WAL files and backups hold sales, customers and staff logins.
+data/pos.db
+data/pos.db-*
+data/backups/
+data/download-*.db
+node_modules/
+.DS_Store
+*.log
